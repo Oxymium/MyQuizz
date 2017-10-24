@@ -87,7 +87,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
     private void endGame() {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
 
-        builder.setTitle("Good game!").setMessage("Your score is " + mScore).setPositiveButton("OK", new DialogInterface.OnClickListener() {
+        builder.setTitle("Well played!").setMessage("Congratulations, your score is " + mScore + " good answer(s)").setPositiveButton("OK", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 //end the activity

@@ -3,6 +3,7 @@ package com.android.raspberyl.myquizz.controller;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.Editable;
+import android.text.InputFilter;
 import android.text.TextWatcher;
 import android.widget.ImageView; //
 import android.widget.EditText; // L'importantion de ces packages est proposée à la création des variables ou methods correspondantes
@@ -15,9 +16,9 @@ import com.android.raspberyl.myquizz.model.User;
 
 public class MainActivity extends AppCompatActivity { // Indique que c'est la class sur laquelle l'application commence
 
-    private ImageView mLogoImage; //
-    private EditText mNameInput; // Création des variables qui servent à recenser les éléments visuels
-    private Button mStartButton; //
+    private ImageView mLogoImage; // Unused
+    private EditText mNameInput;
+    private Button mStartButton;
     private User mUser;
 
     @Override
@@ -39,6 +40,7 @@ public class MainActivity extends AppCompatActivity { // Indique que c'est la cl
 
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
+                //force text input to be at least 1 character before enabling button
                 mStartButton.setEnabled(s.toString().length() > 0);
 
             }
