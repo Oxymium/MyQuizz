@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.android.raspberyl.myquizz.controller.GameActivity">
+
+    <TextView
+        android:id="@+id/question_game_text"
+        android:layout_marginTop="30dp"
+        android:padding="25dp"
+        android:background="#00a96b"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/answer_button1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="answer 1 (ID 0)"
+        android:layout_below="@+id/question_game_text" />
+
+    <Button
+        android:id="@+id/answer_button2"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="answer 2 (ID 1)"
+        android:layout_below="@+id/answer_button1"/>
+
+    <Button
+        android:id="@+id/answer_button3"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="answer 3 (ID 2)"
+        android:layout_below="@+id/answer_button2"/>
+
+    <Button
+        android:id="@+id/answer_button4"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="answer 4 (ID 3)"
+        android:layout_below="@+id/answer_button3"/>
+
+</RelativeLayout>
+
